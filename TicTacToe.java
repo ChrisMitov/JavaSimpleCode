@@ -27,13 +27,13 @@ public class TicTacToe {
 		}
 		switch (winner) {
 		case USERX:
-			System.out.println("Играч 1 печели!");
+			System.out.println("РРіСЂР°С‡ 1 РїРµС‡РµР»Рё!");
 			break;
 		case USERO:
-			System.out.println("Играч 2 печели!");
+			System.out.println("РРіСЂР°С‡ 2 РїРµС‡РµР»Рё!");
 			break;
 		default:
-			System.out.println("Равенство.");
+			System.out.println("Р Р°РІРµРЅСЃС‚РІРѕ.");
 			break;
 		}
 	}
@@ -42,10 +42,10 @@ public class TicTacToe {
 		boolean validInput = false;
 		do {
 			if (turn == USERX) {
-				//System.out.print("Играч Х въведи желана позиция: ");
+				//System.out.print("РРіСЂР°С‡ РҐ РІСЉРІРµРґРё Р¶РµР»Р°РЅР° РїРѕР·РёС†РёСЏ: ");
 				System.out.print("1: ");
 			} else {
-				//System.out.print("Играч O въведи желана позиция: ");
+				//System.out.print("РРіСЂР°С‡ O РІСЉРІРµРґРё Р¶РµР»Р°РЅР° РїРѕР·РёС†РёСЏ: ");
 				System.out.print("2: ");
 			}
 			int x = sc.nextInt() - 1;
@@ -54,7 +54,7 @@ public class TicTacToe {
 				board[x][y] = turn;
 				validInput = true;
 			} else {
-				System.out.println("Това място (" + (x + 1) + "," + (y + 1) + ") не е валидно. Опитай пак...");
+				System.out.println("РўРѕРІР° РјСЏСЃС‚Рѕ (" + (x + 1) + "," + (y + 1) + ") РЅРµ Рµ РІР°Р»РёРґРЅРѕ. РћРїРёС‚Р°Р№ РїР°Рє...");
 			}
 		} while (!validInput);
 	}
